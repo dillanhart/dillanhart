@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <link href='style.css' type='text/css' rel='stylesheet'/>
+  <title> Music I listen to </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <div class="container">
+</head>
+
+  <a href="https://www.youtube.com/watch?v=x-xTttimcNk" onmouseover="playclip();">
+    <img src="http://wordsushi.com/wp-content/uploads/2012/11/The+Wall++high+resolution+png.png" alt="Comfortably Numb -Pink Floyd" id="darkside" title="Comfortably Numb -Pink Floyd"></a><br>
+    <a href="https://www.youtube.com/watch?v=IS6n2Hx9Ykk" onmouseover="playclip2();">
+      <img src="http://superhypeblog.com/wp-content/uploads/2011/08/led-zep-iv.jpg" alt="Stairway to Heaven -Led Zeppelin" id="barcelona" title="Stairway to Heaven -Led Zeppelin"></a><br>
+<img src="Photos/RomanAquaduct.jpg" alt="background" id="RomanAquaduct">
+
+  <audio id="audio1">
+  <source src="music/ComfortablyNumb.mp3"></source>
+  <source src="click.ogg"></source>
+  </audio>
+  <audio id="audio2">
+  <source src="music/Stairway to Heaven.mp3"></source>
+  <source src="click.ogg"></source>
+  </audio>
+  <script>
+  function playclip() {
+
+  if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
+  if (document.all)
+   {
+    document.all.sound.src = "music/ComfortablyNumb.mp3";
+   }
+  }
+
+  else {
+  {
+  var audio = $("#audio1")[0];
+  audio.play();
+  }
+  }
+  }
+
+  </script>
+  <script>
+  function playclip2() {
+  if (navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.indexOf("MSIE 7")!=-1) || (navigator.appVersion.indexOf("MSIE 8")!=-1)) {
+  if (document.all)
+   {
+    document.all.sound.src = "music/ComfortablyNumb.mp3";
+   }
+  }
+
+  else {
+  {
+  var audio = $("#audio2")[0];
+  audio.play();
+  }
+  }
+  }
+
+  </script>
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("#header").hide();
+        });
+        $("#hide").click(function(){
+            $("#hide").hide();
+        });
+    });
+    </script>
+    <input type="button" id="hide" value="hide">
+    <div id="header">
+      Hover to listen to some music (click on the picture for the full song)
+    </div>
+
+    <footer>
+
+    </Footer>
