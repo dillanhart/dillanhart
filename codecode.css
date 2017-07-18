@@ -3,30 +3,6 @@
 	padding: 0;
 }
 
-#html{
-  position: absolute;
-  opacity: 0.7;
-  transition: 0.1s;
-  left: 2%;
-  top: 3%;
-  height: 216px;
-  width: 400px;
-  border-radius: 5%;
-  border:5px solid rgb(43,53,57);
-			z-index: 500;
-}
-
-#html:hover {
-    position: absolute;
-    opacity: 1;
-    transition: 0.1s;
-    left: 3%;
-		top: 5%;
-    height: 232.2px;
-    width: 440px;
-		z-index: 100;
-}
-
 body {
   background-image: url(Photos/RomanAquaduct.jpg);
   background-repeat: no-repeat;
@@ -55,15 +31,12 @@ h1 {
 }
 
 table {
-	position: absolute;
     border-collapse: collapse;
       text-shadow: 0px 0px 0px 10px rgba(0,0,0,1);
       color: #fff;
       font-family: 'LucidaConsole', monospace;
       font-size: 20px;
       font-weight: 900;
-			top: 25%;
-			left: 0%;
 }
 
 table, td, th {
